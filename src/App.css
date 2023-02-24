@@ -1,35 +1,42 @@
-body{
+:root {
+  --border_rad: 16px;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
   background-color: rgba(0, 0, 0, 0.9);
 }
 
 .main-block {
   display: flex;
   flex-direction: column;
+  border-radius: 2rem;
   margin: auto;
-  margin-top: 5vh;
+  margin-top: 0.5vh;
   background-color: #ffffff;
   text-align: center;
   width: 280px;
-  border-radius: 4px;
-  height: 640px;
-  color: darkslategrey
+  color: darkslategrey;
+
 }
 
 .main-img,
 .middle,
 .footer {
   padding: 5px;
-  border-bottom: 0.05rem solid black;
-  
 }
+
 .footer {
   background-color: azure;
-  border-bottom: 0cap;
+  border-bottom-right-radius: var(--border_rad);
+  border-bottom-left-radius:  var(--border_rad) ;
 }
 
 .main-img {
+  border-top-right-radius: var(--border_rad);
+  border-top-left-radius:  var(--border_rad) ;
   flex: 40%;
-  background-color: azure;
+  background-color: rgb(72, 76, 76);
 }
 
 .main-img>img {
@@ -43,11 +50,18 @@ body{
 
 .footer {
   flex: 8%;
-  display: flex;
-  flex-direction:row;
-  justify-content: space-evenly;
+  align-items: center;
+  padding: 2% 20%;
 }
-.footer>a>img{
+
+.footer-icons {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+.footer-icons>a>img {
+  
   margin: 1.3vh auto 0;
   height: 30px;
 }
@@ -57,7 +71,7 @@ body{
 }
 
 .middle--header {
-  line-height: 0;
+  line-height: 0.1rem;
 }
 
 .middle--buttons {
@@ -65,24 +79,32 @@ body{
   flex-direction: row;
   align-items: center;
   margin-top: 15px;
-  justify-content:space-evenly
+  justify-content: space-evenly
 }
-.middle--buttons>a {  
-  padding-top:2%;
+
+.middle--buttons>a {
+  padding: 10px 0px;
   text-decoration: none;
   color: darkslategrey;
-  height: 30px;
-  width: 43%;
+  width: 40%;
   background-color: rgb(197, 207, 215);
   border: 0;
   border-radius: 0.5rem;
 }
 
+.middle--buttons>a>img {
+  vertical-align: top;
+  margin-right: 0.3rem;
+  height: 16px;
+}
+
 .about {
+  margin: auto 1rem;
   padding-left: 2px;
   text-align: justify;
   line-height: 0.65rem;
-  
+  margin-bottom: 0.8rem;
+
 }
 
 .about h2 {
@@ -90,10 +112,11 @@ body{
   margin-bottom: 0.8rem;
 }
 
-.about > small{
+.about>small {
   font-size: 0.6rem;
   padding-left: 2px;
   text-align: left;
 }
+
 
 
