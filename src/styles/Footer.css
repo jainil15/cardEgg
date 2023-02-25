@@ -1,0 +1,30 @@
+/*footer*/
+.footer {
+  
+    background-color: #000000;
+    border-bottom-right-radius: var(--border_rad);
+    border-bottom-left-radius:  var(--border_rad) ;
+    flex: 8%;
+    align-items: center;
+    padding: 2% 20%;
+  }
+  
+  
+  .footer-icons {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+  }
+  
+  .footer-icons>a>img {
+    
+    border: 1px solid white;
+    border-radius: 8px;
+    background-color: white;
+    margin: 1.3vh auto 0;
+    height: 30px;
+  }
+  
+  .footer-icons>a>img:hover {
+    box-shadow: 0px 0px 3px white;
+  }

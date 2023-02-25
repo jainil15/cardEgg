@@ -1,0 +1,66 @@
+/*middle*/
+
+.middle {
+    flex: 40%;
+    text-align: center;
+    background-color: #f0f8ff;
+}
+
+.middle--header {
+    line-height: 0.1rem;
+    padding-bottom: 0.65rem;
+    border-bottom: 1.3px solid #111010cc;
+
+}
+
+.middle--header>small {
+    line-height: -1rem;
+}
+
+.middle--buttons {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-top: 0.65rem;
+    justify-content: space-evenly
+}
+
+.middle--buttons>a {
+    display: flex;
+    justify-content: space-evenly;
+    padding: 10px 0px;
+    text-decoration: none;
+    color: darkslategrey;
+    width: 40%;
+    background-color: rgb(197, 207, 215);
+    border: 0;
+    border-radius: 0.5rem;
+}
+
+.middle--buttons>a>img {
+    margin: auto;
+    height: 18px;
+    margin-left: 0px;
+    margin-right: 0px;
+}
+
+.about {
+    margin: auto 1rem;
+    padding-left: 2px;
+    text-align: justify;
+    line-height: 0.65rem;
+    margin-bottom: 0.8rem;
+
+}
+
+.about h2 {
+    margin-top: 0.9rem;
+    font-size: 1.4rem;
+    margin-bottom: 0.8rem;
+}
+
+.about>small {
+    font-size: 0.6rem;
+    padding-left: 2px;
+    text-align: left;
+}

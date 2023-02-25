@@ -1,0 +1,38 @@
+:root {
+  --border_rad: 0.5rem;
+}
+
+body {
+  
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: rgba(0, 0, 0, 0.9);
+}
+
+.main-block {
+  
+  display: flex;
+  flex-direction: column;
+  border-radius: var(--border_rad);
+  margin: auto;
+  margin-top: 3.5vh;
+  text-align: center;
+  width: 320px;
+  color: darkslategrey;
+
+}
+
+.main-img,
+.middle,
+.footer {
+  overflow:visible;
+  overflow: hidden;
+  padding: 5px;
+}
+
+
+
+
+
+
+
+
